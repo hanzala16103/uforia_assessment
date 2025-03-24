@@ -3,7 +3,12 @@ import { Snackbar, Alert, IconButton } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CloseIcon from "@mui/icons-material/Close";
 
-const ToastNotification = ({ submission, open, onClose, onLike }) => {
+export default function ToastNotification({
+  submission,
+  open,
+  onClose,
+  onLike,
+}) {
   if (!submission) return null;
 
   return (
@@ -36,6 +41,4 @@ const ToastNotification = ({ submission, open, onClose, onLike }) => {
       </Alert>
     </Snackbar>
   );
-};
-
-export default ToastNotification;
+}
