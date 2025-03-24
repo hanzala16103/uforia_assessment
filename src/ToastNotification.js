@@ -13,10 +13,20 @@ const ToastNotification = ({ submission, open, onClose, onLike }) => {
         severity="success"
         action={
           <>
-            <IconButton size="small" onClick={onLike} color="inherit">
+            <IconButton
+              size="small"
+              onClick={onLike}
+              color="inherit"
+              aria-label="Favorite"
+            >
               <FavoriteIcon />
             </IconButton>
-            <IconButton size="small" onClick={onClose} color="inherit">
+            <IconButton
+              size="small"
+              onClick={onClose}
+              color="inherit"
+              aria-label="close"
+            >
               <CloseIcon />
             </IconButton>
           </>
